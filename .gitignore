@@ -1,0 +1,6 @@
+/BML-Portfolio/
+.netlify/
+node_modules/
+.env
+.env.*
+!.env.example

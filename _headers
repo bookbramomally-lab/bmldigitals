@@ -1,0 +1,58 @@
+# Netlify deployment headers. Keep mutable page and code files fresh.
+/
+  Cache-Control: public, max-age=0, must-revalidate
+
+/404.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+/about.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+/bml-technologies.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+/contact.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+/index.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+/portfolio.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+/resume.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+/services.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+/sterling-heritage.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+/swiftgram-showcase.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+/urban-stylin.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+/style.css
+  Cache-Control: public, max-age=0, must-revalidate
+
+/app.js
+  Cache-Control: public, max-age=0, must-revalidate
+
+/optics.js
+  Cache-Control: public, max-age=0, must-revalidate
+
+/robots.txt
+  Cache-Control: public, max-age=0, must-revalidate
+
+/sitemap.xml
+  Cache-Control: public, max-age=0, must-revalidate
+
+# Unversioned media can be reused for an hour, then revalidated.
+/assets/*
+  Cache-Control: public, max-age=3600, must-revalidate
+
+/entrance.js
+  Cache-Control: public, max-age=0, must-revalidate

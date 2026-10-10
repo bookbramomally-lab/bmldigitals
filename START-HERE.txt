@@ -1,0 +1,74 @@
+BML / OPTICAL ATELIER / PERSONAL BRAND EDITION
+
+Extract the ZIP. The complete static website is inside BML-Portfolio.
+This edition replaces the website files as a set. Use the supplied HTML, style.css, app.js, optics.js, entrance.js and assets together.
+No build step, framework or package installation is needed to run the website.
+
+OPEN IN VS CODE
+Open BML-Portfolio in VS Code. Use your existing Live Server extension to open index.html.
+
+UPDATE YOUR NETLIFY PORTFOLIO
+From the terminal inside BML-Portfolio, with the Netlify CLI already installed:
+netlify login
+netlify link
+Choose your existing BML portfolio site, then:
+netlify deploy --prod --dir .
+Select your portfolio, not another business website.
+Alternatively, upload the entire BML-Portfolio folder through Netlify's manual deploy.
+
+DOMAIN METADATA
+The canonical links, social metadata, robots.txt and sitemap.xml currently use the ChatGPT preview URL.
+After deploying to your own domain, replace that address throughout the HTML files, robots.txt and sitemap.xml with your public portfolio domain.
+
+PAGES
+Home, Work, About, Services, Contact, Professional Profile, four case studies and a 404 page.
+
+PERSONAL BRAND UPDATE
+The original portrait is now the site favicon and Apple touch icon. The original brand logo remains in the header, hero and entrance.
+LinkedIn: https://www.linkedin.com/in/bramoml is linked in every footer and on the Contact page, with profile metadata updated.
+A logo-only entrance appears once per tab session, with a dimming pulse and expansion. It finishes in about 1.65 seconds, or 0.35 seconds with reduced motion.
+Escape or Tab skips the entrance. A 2.2 second fail-open guard prevents it from blocking access if the deferred script fails.
+No JavaScript means no blocking entrance. If storage is unavailable, the entrance can repeat but remains bounded.
+Favicons may remain cached in browsers that previously visited the portfolio. A new tab or browser refresh may be needed to see the portrait icon.
+
+TRAFFIC DELIVERY
+This remains a static website with no shared application server, sessions or database requests. CDN delivery is the appropriate architecture for simultaneous visitors.
+Netlify already caches static files at its edge. The included _headers file adds browser caching for media for one hour and revalidation for page and code files. Do not delete _headers when deploying.
+These headers are Netlify specific. Their behavior has not been verified on your Netlify deployment, and they are not claimed to apply to the ChatGPT preview host.
+The current project film loads near the project area. The following film preloads only after the current project is more than 65 percent through its scroll sequence.
+Your Netlify account, billing plan, usage limits, firewall and domain settings have not been changed.
+After deployment, check Usage & billing in your Netlify team dashboard. Monitor bandwidth, requests and available credits. Account limits can pause hosted sites.
+No real concurrent traffic load test was performed. There is no claimed visitor ceiling or guarantee of unlimited traffic.
+
+FINAL REFINEMENTS
+Larger reading text, clearer labels, consistent section spacing and comfortable link and control targets.
+Preview controls sit below the image, keeping the focus lens unobstructed.
+Native select text is 16 pixels to avoid focus zoom on iPhone.
+The mobile menu close icon and focus indicators follow the contrast of their background.
+Shorter mobile screens use the normal project sequence. The pinned sequence requires at least 820 pixels of height on screens up to 800 pixels wide, and 680 pixels on wider screens.
+Mobile footer contact details use a single column on narrow phones.
+Original assets, identity and project descriptions are preserved. LinkedIn links and the entrance have been added.
+
+THE EXPERIENCE
+Your original logo expands smoothly with scrolling and returns to its original size when scrolling back. It does not rotate.
+The homepage project theatre moves through four real website previews. Its project buttons jump between them and support arrow keys.
+On small or short viewports and with reduced motion enabled, the theatre becomes a normal readable list.
+The Work page and each case study have scroll controlled homepage films.
+Every preview includes Explore detail. A custom Canvas lens magnifies the actual project image or video frame. Move it with a mouse, drag on a touch screen, or use arrow keys after opening it. Home recentres the lens and Escape closes it.
+Magnification and Preview position controls let visitors inspect a frame and scrub the film. Scrolling does not override the film while inspection is open.
+With reduced motion, scroll animation stops but visitors can still explicitly inspect and scrub the previews. Without Canvas, the preview position control remains available. Without JavaScript, the original previews and project links remain visible.
+Closing the lens releases its Canvas buffer. Rendering responds to input and media events rather than a continuous idle animation.
+Titles and previews use matching native page transitions where supported. Ordinary page navigation remains the fallback.
+Services use keyboard accessible native disclosure panels. The mobile menu supports keyboard focus and Escape.
+The professional profile can be printed or saved as a PDF.
+Page transitions use the browser's native view transition feature where supported, with normal navigation elsewhere.
+
+VISUALS
+Your original logo, personal photo and four homepage captures are preserved unchanged.
+The films animate real homepage captures. They are not recordings of live website interactions.
+The palette combines deep architectural ink, pale mineral, cool stone and a restrained blue accent. The original blue logo is intact.
+No generated imagery, emojis, CSS gradients, invented achievements or new backend claims are included.
+The font files are local and their license notices are included under assets/fonts.
+
+VERIFICATION
+Read VERIFICATION.txt for the checks completed and the remaining visual testing limitation.
